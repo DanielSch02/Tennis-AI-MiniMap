@@ -1,0 +1,34 @@
+# --- Local Claude settings ---
+.claude/settings.local.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- Third-party code & model weights (fetched by setup_models.py) ---
+# TennisCourtDetector is cloned, not vendored (no license to redistribute).
+/TennisCourtDetector/
+# TrackNet ball model: architecture + weights come from yastrebksv/TrackNet;
+# not redistributed here (see setup_models.py / ATTRIBUTION.md). Keep the
+# folder layout (README / .gitkeep) but never commit code or weights.
+/models/tracknet_ball/*
+/models/vitpose_base_simple/*
+!/models/**/.gitkeep
+*.pt
+*.pth
+*.safetensors
+
+# --- Data & generated media (copyrighted footage / large binaries) ---
+# demo.gif at the repo root is committed intentionally (README showcase).
+# The input_videos/ and output_videos/ folders ship empty (README + .gitkeep);
+# their actual contents are never committed.
+/input_videos/*
+!/input_videos/README.md
+!/input_videos/.gitkeep
+/output_videos/*
+!/output_videos/README.md
+!/output_videos/.gitkeep

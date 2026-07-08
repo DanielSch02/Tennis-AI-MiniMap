@@ -1,0 +1,22 @@
+# Core CV / numerics
+numpy
+opencv-python
+scipy
+
+# Deep-learning stack (CUDA optional — the runners fall back to CPU)
+torch
+torchvision
+
+# Pose (ViT-Pose) via HuggingFace
+transformers
+safetensors
+
+# Player detection
+rfdetr
+
+# HTTPS through a corporate/AV root CA (e.g. Norton SSL interception).
+# Verifies against the OS trust store instead of certifi's bundle.
+truststore
+
+# Optional: only used by run_inference_demo.py (remote-inference demo)
+requests
